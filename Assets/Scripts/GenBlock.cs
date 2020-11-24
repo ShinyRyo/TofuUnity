@@ -15,6 +15,10 @@ public class GenBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonUp("Jump"))
+        {
+
+            Instantiate(Wall, new Vector3(0, 5.0f, 0), Quaternion.identity);
+        }    
     }
 }
